@@ -6,7 +6,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "format:check": "prettier --check \"src/**/*.{ts,html,scss,json,md}\"",
+    "format:fix": "prettier --write \"src/**/*.{ts,html,scss,json,md}\"",
+    "format:all": "prettier --write ."
   },
   "dependencies": {
     "@angular/common": "^22.0.0",
@@ -22,6 +27,9 @@
     "@angular/build": "^22.0.0",
     "@angular/cli": "^22.0.0",
     "@angular/compiler-cli": "^22.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.8.4",
     "typescript": "~6.0.0"
   }
 }
