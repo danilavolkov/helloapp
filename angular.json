@@ -14,6 +14,18 @@
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true
+            }
           }
         },
         "serve": {
